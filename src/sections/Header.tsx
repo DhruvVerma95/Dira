@@ -1,6 +1,6 @@
 import LogoIcon from "@/assets/logo.svg";
 import MenuIcon from "@/assets/icon-menu.svg";
-import Button from "../components/Button";
+import Button from "@/components/button";
 export const Header = () => {
   return (
     <header className='py-4 border-b border-white/15 md:border-none sticky top-0 z-10'>

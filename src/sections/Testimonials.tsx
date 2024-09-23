@@ -8,26 +8,26 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     text: "“This product has completely transformed how I manage my projects and deadlines”",
-    name: "Sophia Perez",
+    name: "Garv sahu",
     title: "Director @ Quantum",
     avatarImg: avatar1,
   },
   {
     text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”",
-    name: "Jamie Lee",
+    name: "Abhijeet bihari",
     title: "Founder @ Pulse",
     avatarImg: avatar2,
   },
   {
     text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
-    name: "Alisa Hester",
+    name: "Vivek jhaatu",
     title: "Product @ Innovate",
     avatarImg: avatar3,
   },
   {
     text: "“Our team's productivity has increased significantly since we started using this tool”",
-    name: "Alec Whitten",
-    title: "CTO @ Tech Solutions",
+    name: "Anant dubey",
+    title: "Berozgaar @ Tech Solutions",
     avatarImg: avatar4,
   },
 ];
