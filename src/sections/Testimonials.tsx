@@ -14,13 +14,13 @@ const testimonials = [
   },
   {
     text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”",
-    name: "Abhijeet bihari",
+    name: "Abhijeet kumar",
     title: "Founder @ Pulse",
     avatarImg: avatar2,
   },
   {
     text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
-    name: "Vivek jhaatu",
+    name: "Vivek Jadhav",
     title: "Product @ Innovate",
     avatarImg: avatar3,
   },
