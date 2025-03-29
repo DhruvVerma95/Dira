@@ -1,0 +1,7 @@
+const communityLinks = [
+  { id: "discord", icon: <FaDiscord size={28} />, label: "Discord" },
+  { id: "telegram", icon: <RiSendPlaneFill size={28} />, label: "Telegram" },
+  { id: "x", icon: <FaXTwitter size={28} />, label: "X" },
+  { id: "reddit", icon: <FaRedditAlien size={28} />, label: "Reddit" },
+  { id: "blog", icon: <FaXTwitter size={28} />, label: "Blog" },
+];

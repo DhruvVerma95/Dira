@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.6.19",
+    "@keplr-wallet/types": "^0.12.210",
     "@lottiefiles/dotlottie-react": "^0.7.2",
     "framer-motion": "^11.3.2",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.5.0",
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {

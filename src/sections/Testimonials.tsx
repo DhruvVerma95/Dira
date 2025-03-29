@@ -1,5 +1,5 @@
 "use client";
-import avatar1 from "@/assets/avatar-1.png";
+import avatar1 from "@/assets/Rithik.png";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
 import avatar4 from "@/assets/avatar-4.png";
@@ -8,28 +8,28 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     text: "“This product has completely transformed how I manage my projects and deadlines”",
-    name: "Garv sahu",
-    title: "Director @ Quantum",
+    name: "Rithik Kumar",
+    title: "CTO @ Dira",
     avatarImg: avatar1,
   },
   {
     text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”",
-    name: "Abhijeet kumar",
-    title: "Founder @ Pulse",
+    name: "John",
+    title: "CEO @ DIRA",
     avatarImg: avatar2,
   },
-  {
-    text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
-    name: "Vivek Jadhav",
-    title: "Product @ Innovate",
-    avatarImg: avatar3,
-  },
-  {
-    text: "“Our team's productivity has increased significantly since we started using this tool”",
-    name: "Anant dubey",
-    title: "Berozgaar @ Tech Solutions",
-    avatarImg: avatar4,
-  },
+  // {
+  //   text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
+  //   name: "Vivek Jadhav",
+  //   title: "Product @ Innovate",
+  //   avatarImg: avatar3,
+  // },
+  // {
+  //   text: "“Our team's productivity has increased significantly since we started using this tool”",
+  //   name: "Anant dubey",
+  //   title: "Berozgaar @ Tech Solutions",
+  //   avatarImg: avatar4,
+  // },
 ];
 
 export const Testimonials = () => {

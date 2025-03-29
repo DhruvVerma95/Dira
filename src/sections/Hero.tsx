@@ -90,14 +90,13 @@ export const Hero = () => {
       {/* ring end ?    */}
       <div className='container relative mt-16'>
         <h1 className='text-8xl md:text-[168px] md:leading-none font-semibold tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))] text-transparent bg-clip-text text-center'>
-          AI SEO
+          DIRA
         </h1>
         <p className='text-lg md:text-xl text-white/70 mt-5 text-center max-w-xl mx-auto'>
-          Elevate your site&apos;s visibility effortlessly with AI, where smart
-          techonology meets user-friendly SEO tools.
+        The premier decentralized stablecoin for the Emirati Dirham, backed by OM and built for the future of finance in Dubai.
         </p>
         <div className='flex justify-center mt-5'>
-          <Button>Join waitlist</Button>
+          <Button>???</Button>
         </div>
       </div>
     </motion.section>
