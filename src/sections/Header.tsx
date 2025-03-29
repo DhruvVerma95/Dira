@@ -31,15 +31,15 @@ export const Header = ({
 
   return (
     <header
-      className={`py-4 border-b border-white/15 md:border-none sticky top-0 z-50 transition-all ${
-        isScrolled ? "bg-transparent backdrop-blur-md shadow-md" : ""
+      className={`py-4 border-b  border-white/15 md:border-none sticky top-0 z-50 transition-all ${
+        isScrolled ? "bg-transparent  " : ""
       }`}
     >
       <div className="max-w-5xl w-full mx-auto px-4 relative">
-        <div className="flex justify-between items-center md:border border-white/15 md:p-3 rounded-xl relative w-full">
+        <div className="flex justify-between backdrop-blur-md items-center md:border border-white/15 md:p-3 rounded-xl relative w-full">
           {/* Logo - Navigate to Home */}
           <div
-            className="border h-12 w-12 rounded-lg inline-flex justify-center items-center border-white/15 cursor-pointer"
+            className="border h-12 w-12 rounded-lg  inline-flex justify-center items-center border-white/15 cursor-pointer"
             onClick={() => {
               router.push("/");
               setSelectedNav("home");
