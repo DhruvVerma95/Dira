@@ -11,18 +11,17 @@ const communityLinks = [
   { id: "reddit", icon: <FaRedditAlien size={24} />, label: "Reddit" },
   { id: "blog", icon: <FaXTwitter size={24} />, label: "Blog" },
 ];
-
 export default function Community({ isSidebarOpen }: { isSidebarOpen: boolean }) {
   return (
     <div className="w-full flex justify-center">
-      <div className="grid grid-cols-2 gap-8 text-white text-sm">
-        {/* Left Column */}
+      <div className="grid grid-cols-2 gap-x-16 gap-y-6 text-white text-sm">
+        {/* Left Column (Stacked Items) */}
         <div className="space-y-4 text-center">
           {communityLinks.slice(0, Math.ceil(communityLinks.length / 2)).map(({ id, icon, label }) => (
             <motion.div
               key={id}
               whileHover={{ color: "#ffffff" }}
-              className="flex items-center gap-3 cursor-pointer text-white/70 hover:text-white transition-colors justify-center"
+              className="flex items-center gap-4 cursor-pointer text-white/70 hover:text-white transition-colors justify-center"
             >
               {icon}
               <span>{label}</span>
@@ -30,13 +29,13 @@ export default function Community({ isSidebarOpen }: { isSidebarOpen: boolean })
           ))}
         </div>
 
-        {/* Right Column */}
-        <div className="space-y-4 text-center">
+        {/* Right Column (Not Centered) */}
+        <div className="space-y-4 text-center self-start">
           {communityLinks.slice(Math.ceil(communityLinks.length / 2)).map(({ id, icon, label }) => (
             <motion.div
               key={id}
               whileHover={{ color: "#ffffff" }}
-              className="flex items-center gap-3 cursor-pointer text-white/70 hover:text-white transition-colors justify-center"
+              className="flex items-center gap-4 cursor-pointer text-white/70 hover:text-white transition-colors justify-center"
             >
               {icon}
               <span>{label}</span>
@@ -47,3 +46,4 @@ export default function Community({ isSidebarOpen }: { isSidebarOpen: boolean })
     </div>
   );
 }
+
