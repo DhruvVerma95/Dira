@@ -42,7 +42,7 @@ export default function Top() {
       setSidebarOpen(false);
       setSidebarContent(null);
       setSelectedNav("Home");
-      router.push("/");
+      window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
 
@@ -73,11 +73,11 @@ export default function Top() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed z-40 w-full max-w-xl left-1/4 px-4 mt-1"
+            className="fixed z-40 w-full flex justify-center px-4 mt-1"
             style={{ top: (headerRef.current?.offsetHeight || 0) + "px" }}
           >
-            {/* Sidebar Box */}
-            <div className="border border-white/20 rounded-2xl p-12 shadow-xl flex flex-col items-center space-y-6 w-full backdrop-blur-lg bg-white/0 min-h-[200px]">
+            {/* Centered Sidebar Box */}
+            <div className="border border-white/20 rounded-2xl p-12 shadow-xl flex flex-col items-center space-y-6 w-full max-w-4xl backdrop-blur-lg min-h-[200px]">
               {/* Smooth Transition Between Components */}
               <div className="w-full relative">
                 <AnimatePresence mode="wait">
