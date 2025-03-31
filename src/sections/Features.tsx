@@ -5,7 +5,7 @@ import {
   DotLottiePlayer,
 } from "@dotlottie/react-player";
 
-import productImage from "@/assets/DIraImageSite.png";
+import productImage from "@/assets/ProdImg.png";
 import React, {
   ComponentPropsWithoutRef,
   useEffect,
@@ -23,27 +23,27 @@ import { motion } from "framer-motion";
 const tabs = [
   {
     icon: "/assets/lottie/vroom.lottie",
-    title: "User-friendly dashboard",
+    title: "Simple",
     isNew: false,
-    backgroundPositionX: 0,
-    backgroundPositionY: 0,
-    backgroundSizeX: 150,
+    backgroundPositionX: 50,
+    backgroundPositionY: 10,
+    backgroundSizeX: 135,
   },
   {
     icon: "/assets/lottie/click.lottie",
-    title: "One-click optimization",
+    title: "Secure",
     isNew: false,
-    backgroundPositionX: 98,
-    backgroundPositionY: 100,
+    backgroundPositionX: 50,
+    backgroundPositionY: 50,
     backgroundSizeX: 135,
   },
   {
     icon: "/assets/lottie/stars.lottie",
-    title: "Smart keyword generator",
+    title: "Stable",
     isNew: true,
-    backgroundPositionX: 100,
-    backgroundPositionY: 27,
-    backgroundSizeX: 177,
+    backgroundPositionX: 50,
+    backgroundPositionY: 110,
+    backgroundSizeX: 135,
   },
 ];
 
@@ -136,8 +136,7 @@ export const Features = () => {
           Simple, Secure, Stable.
         </h2>
         <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto tracking-tighter text-center mt-5">
-          From small startups to large enterprises, our AI-driven tool has
-          revolutionized the way businesses approach SEO.
+        Navigate crypto markets with confidence. Dira offers a stable, AED-pegged digital currency, allowing you to transact with the reliability of traditional finance and the innovation of DeFi.
         </p>
         <div className="mt-10 flex flex-col lg:flex-row gap-3">
           {tabs.map((tab, tabIndex) => (

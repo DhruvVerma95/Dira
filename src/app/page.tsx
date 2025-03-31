@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Top />
       <Hero />
-      <LogoTicker />
+      {/* <LogoTicker /> */}
       <Features />
       {/* <Testimonials /> */}
       <CallToAction />

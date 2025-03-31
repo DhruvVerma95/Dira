@@ -79,13 +79,14 @@ export const CallToAction = () => {
             }}></motion.div>
           <div className='relative'>
             <h2 className='text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text-center font-medium'>
-              AI-driver SEO for paragraph
+            Join the
+            RWA DeFi revolution
             </h2>
             <p className='text-center text-lg md:text-xl max-w-xs mx-auto text-white/70 px-4 mt-5 tracking-tighter'>
-              Achieve clear, impactful results without the complexity
+            Here’s how you can benefit from Real World Assets on DeFi
             </p>
             <div className='flex justify-center mt-8'>
-              <Button>Join Waitlist</Button>
+              <Button>View Blog</Button>
             </div>
           </div>
         </motion.div>
