@@ -5,3 +5,30 @@ const communityLinks = [
   { id: "reddit", icon: <FaRedditAlien size={28} />, label: "Reddit" },
   { id: "blog", icon: <FaXTwitter size={28} />, label: "Blog" },
 ];
+
+
+
+"use client";
+import { motion } from "framer-motion";
+import { FaRedditAlien, FaFileAlt, FaDiscord, FaXTwitter } from "react-icons/fa6";
+import { RiSendPlaneFill } from "react-icons/ri";
+
+const communityLinks = [
+  { id: "discord", icon: <FaDiscord className="w-5 text-base" />, label: "Discord" },
+  { id: "telegram", icon: <RiSendPlaneFill className="w-5 text-base" />, label: "Telegram" },
+  { id: "x", icon: <FaXTwitter className="w-5 text-base" />, label: "X" },
+  { id: "reddit", icon: <FaRedditAlien className="w-5 text-base" />, label: "Reddit" },
+  { id: "blog", icon: <FaFileAlt className="w-5 text-base" />, label: "Blog" },
+];
+
+"use client";
+import { motion } from "framer-motion";
+import { FaBook, FaCodeBranch, FaBug, FaFolderOpen, FaUsers } from "react-icons/fa";
+
+const githubItems = [
+  { id: "repo1", label: "Project Repository", icon: <FaFolderOpen className="w-5 text-sm" /> },
+  { id: "repo2", label: "Documentation", icon: <FaBook className="w-5 text-sm" /> },
+  { id: "repo3", label: "Contribute", icon: <FaUsers className="w-5 text-sm" /> },
+  { id: "repo4", label: "Issues", icon: <FaBug className="w-5 text-sm" /> },
+  { id: "repo5", label: "Pull Requests", icon: <FaCodeBranch className="w-5 text-sm" /> },
+];

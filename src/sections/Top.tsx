@@ -77,7 +77,7 @@ export default function Top() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.1, ease: "easeInOut" }}
+            transition={{ duration: 0.1, ease: "easeInOut" }} // Matched duration
             className="fixed z-40 w-full flex justify-center px-4"
             style={{ top: (headerRef.current?.offsetHeight || 0) + "px" }}
           >
@@ -86,7 +86,7 @@ export default function Top() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.25, ease: "easeInOut" }}
+              transition={{ duration: 0.6, ease: "easeInOut" }} // Matched duration
               className="border border-white/20 rounded-2xl p-8 shadow-xl flex flex-col items-center space-y-6 w-full max-w-5xl min-h-[180px] bg-black/0 backdrop-blur-xl"
             >
               {/* Content Transition */}
@@ -97,7 +97,7 @@ export default function Top() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.2, ease: "easeInOut" }}
+                    transition={{ duration: 0.2, ease: "easeInOut" }} // Matched duration
                     className="absolute w-full"
                   >
                     {sidebarContent === "Community" && <Community isSidebarOpen={sidebarOpen} />}
