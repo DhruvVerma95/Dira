@@ -23,8 +23,7 @@ export default function Top() {
         headerRef.current &&
         !headerRef.current.contains(event.target as Node)
       ) {
-        setSidebarOpen(false);
-        setSidebarContent(null);
+        closeSidebar();
       }
     };
 
@@ -37,11 +36,17 @@ export default function Top() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [sidebarOpen]);
 
+  const closeSidebar = () => {
+    setSidebarOpen(false);
+    setSidebarContent(null);
+    if (selectedNav !== "home") {
+      setSelectedNav("home");
+    }
+  };
+
   const handleSidebarOpen = (id: string) => {
     if (id === "Home") {
-      setSidebarOpen(false);
-      setSidebarContent(null);
-      setSelectedNav("Home");
+      closeSidebar();
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
@@ -72,13 +77,19 @@ export default function Top() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed z-40 w-full flex justify-center px-4 mt-1"
+            transition={{ duration: 0.1, ease: "easeInOut" }}
+            className="fixed z-40 w-full flex justify-center px-4"
             style={{ top: (headerRef.current?.offsetHeight || 0) + "px" }}
           >
-            {/* Centered Sidebar Box */}
-            <div className="border border-white/20 rounded-2xl p-12 shadow-xl flex flex-col items-center space-y-6 w-full max-w-4xl backdrop-blur-lg min-h-[200px]">
-              {/* Smooth Transition Between Components */}
+            {/* Sidebar Box with Blur */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.25, ease: "easeInOut" }}
+              className="border border-white/20 rounded-2xl p-8 shadow-xl flex flex-col items-center space-y-6 w-full max-w-5xl min-h-[180px] bg-black/0 backdrop-blur-xl"
+            >
+              {/* Content Transition */}
               <div className="w-full relative">
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -95,7 +106,7 @@ export default function Top() {
                   </motion.div>
                 </AnimatePresence>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
